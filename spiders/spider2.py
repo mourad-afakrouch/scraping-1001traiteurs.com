@@ -1,7 +1,9 @@
 import scrapy
 from scrapy.http.request import Request
 
-# we will extract data by  regions 
+
+
+# this will extract data by  regions 
 
 class Traiteur(scrapy.Spider):
 	name = "my_scraper1"
@@ -61,8 +63,10 @@ class Traiteur(scrapy.Spider):
 				
 				}
 		"""
-		 execute this command   (scrapy crawl my_scraper1 -o file.json) in the shell and  Voilà :)
-		 and you will find a file called file.json 
+		 execute this command   (scrapy crawl my_scraper1 -o file.json)   and  Voilà :)
+		 it will create  file.json 
+
+		 that contains all scraped data
 
 
 
