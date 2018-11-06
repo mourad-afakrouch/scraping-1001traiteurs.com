@@ -2,6 +2,13 @@ import scrapy
 from scrapy.http.request import Request
 
 
+# unfortunatelly this website is changed 
+
+# it s almoste the same logic but you have to adabt this script to the new layaout 
+
+
+print('hey')
+
 
 # this will extract data by  regions 
 
@@ -44,7 +51,7 @@ class Traiteur(scrapy.Spider):
 
 	def parse_info(self, response):
 
-		# now we are in the traiteur page , we can scrape anything we want 
+		# now we are in the traiteur page , we can get any data we want from it
 
 		Titre =  response.xpath("//div[contains(@class, 'd-contact-traiteur-titre')]/text()").extract()
 		tel_1  = response.xpath("//div[contains(@class, 'd-contact-traiteur-tel')]/text()").extract_first()
