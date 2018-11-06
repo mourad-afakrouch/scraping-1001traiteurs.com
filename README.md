@@ -2,19 +2,18 @@
 
 Hello 
 
-in this document i will show you 
-step by step how to scrap this website = www.1001traiteurs.com
+in this tutorial im gonna show you how to crawl data from this website : www.1001traiteurs.com
 
-after installing scrapy 
+assuming that you ve already install  python  scrapy 
 
-C:\Users\MouradSoft\Desktop> scrapy startproject traiteurs
+C:\Users\user\Desktop> scrapy startproject traiteurs
 
-C:\Users\MouradSoft\Desktop> cd .\traiteurs\
+C:\Users\user\Desktop> cd .\traiteurs\
 
-PS C:\Users\MouradSoft\Desktop\traiteurs> ls
+PS C:\Users\user\Desktop\traiteurs> ls
 
 
-    Répertoire : C:\Users\MouradSoft\Desktop\traiteurs
+    Répertoire : C:\Users\user\Desktop\traiteurs
 
 
 Mode                LastWriteTime         Length Name
@@ -23,11 +22,11 @@ d-----       23/10/2017     10:28                traiteurs
 -a----       23/10/2017     10:28            262 scrapy.cfg
 
 
-PS C:\Users\MouradSoft\Desktop\traiteurs> cd .\traiteurs\
-PS C:\Users\MouradSoft\Desktop\traiteurs\traiteurs> ls
+PS C:\Users\user\Desktop\usertraiteurs> cd .\traiteurs\
+PS C:\Users\user\Desktop\traiteurs\traiteurs> ls
 
 
-    Répertoire : C:\Users\MouradSoft\Desktop\traiteurs\traiteurs
+    Répertoire : C:\Users\user\Desktop\traiteurs\traiteurs
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -41,7 +40,7 @@ d-----       20/10/2017     23:38                __pycache__
 
 
 
-PS C:\Users\MouradSoft\Desktop\traiteurs\traiteurs> scrapy shell "https://www.1001traiteurs.com"
+PS C:\Users\user\Desktop\traiteurs\traiteurs> scrapy shell "https://www.1001traiteurs.com"
 
 
 response.xpath("//li[contains(@class, 'top5-detail')]").extract()
