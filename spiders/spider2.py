@@ -2,6 +2,13 @@ import scrapy
 from scrapy.http.request import Request
 
 
+# unfortunatelly this website is changed 
+
+# it s almoste the same logic but you have to adabt this script to the new layaout 
+
+
+print('hey')
+
 
 # this will extract data by  regions 
 
